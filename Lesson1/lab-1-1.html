@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>JavaScript 2009 Lenel 1 Lesson 1</title>
+	</head>
+	<body>
+		<h2>JavaScript 2009 Lenel 1 Lesson 1</h2>
+		<script type="text/javascript">
+			var userName = prompt("Здравствуте, уважаемый пользователь!\nПожалуйста, введите Ваше имя:", "Меня зовут...");
+			var string1 = "Введите, пожалуйста, уважаемый пользователь ";
+			var string2 = ", первое из чисел, которые Вы хотите перемножить:";
+			var message1 = string1 + userName + string2;
+			var message2 = "Введите второе число:";
+			var number1 = prompt(message1, "Число 1");
+			var number2 = prompt(message2, "Число 2");
+
+			number1 = parseInt(number1);
+			number2 = parseInt(number2);
+
+			var pi = 3.14;
+			var ff = 0xFF;
+			var result = pi*ff;
+
+			alert(result);
+			document.write("<h3>Добро пожаловать, " + userName + ", на наш ресурс!</h3>\n<p>Ваше число есть " + number1 + "*" + number2 + "=" + number1*number2+ "</p>");
+		</script>
+	</body>
+</html>
