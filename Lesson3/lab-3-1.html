@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			JavaScript 2009 Lenel 1 Lesson 2
+		</title>
+	</head>
+	<body>
+		<h1>JavaScript 2009 Lenel 1 Lesson 2</h1>
+		<script type="text/javascript">
+			function crowsMessage(crows){
+				var message = "";
+
+				switch(crows){
+					case 1:
+						message = "На ветке сидела одна ворона";
+						break;
+					case 2:
+						message = "На ветке сидело две вороны";
+						break;
+					case 3:
+						message = "На ветке сидело три вороны";
+						break;
+					case 4:
+						message = "На ветке сидело четыре вороны";
+						break;
+					case 5:
+						message = "На ветке сидело пять ворон";
+						break;
+					case 6:
+						message = "На ветке сидело шесть ворон";
+						break;
+					case 7:
+						message = "На ветке сидело семь ворон";
+						break;
+					case 8:
+						message = "На ветке сидело восемь ворон";
+						break;
+					case 9:
+						message = "На ветке сидело девять ворон";
+						break;
+					case 10:
+						message = "На ветке сидело десять ворон";
+						break;
+					default:
+						message = "Неизвестная ошибка";
+						break;
+				}
+
+				return message;
+			}
+
+			var crows = parseInt(prompt("Сколько ворон сидело на ветке?", "Введите значение от 1 до 10")); // crows = (integer)crows; - не работает
+			alert(crowsMessage(crows));
+			document.write(crowsMessage(crows));
+		</script>
+	</body>
+</html>
