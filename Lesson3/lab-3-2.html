@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			JavaScript 2009 Level 1 Lesson 3
+		</title>
+	</head>
+	<body>
+		<h2>JavaScript 2009 Level 1 Lesson 3</h2>
+		<script type="text/javascript">
+			
+			// Вычисление среднего арифметического двух чисел
+			
+			function average(a, b) {
+
+				a = parseInt(a);
+				b = parseInt(b);
+
+				return ((a + b) / 2);
+
+			}
+
+			alert("Введите (в следующих окнах) два числа, чтобы узнать их среднее арифметическое...");
+			var a = prompt("Введите первое число:", "");
+			var b = prompt("Введите второе число:", "");
+
+			alert("Среднее арифметическое введённых чисел равно: " + average(a, b));
+			document.write("Среднее арифметическое введённых чисел равно: " + average(a, b));
+
+		</script>
+	</body>
+</html>
